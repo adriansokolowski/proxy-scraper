@@ -11,7 +11,7 @@ $start_count = 1;
 $end_count = 10;
 
 for ($i = $start_count; $i <= $end_count; $i++){
-  curl_setopt($curl, CURLOPT_URL, https://www.my-proxy.com/free-proxy-list-$i.html');
+  curl_setopt($curl, CURLOPT_URL, "https://www.my-proxy.com/free-proxy-list-$i.html");
 
   $result = curl_exec($curl);
   
